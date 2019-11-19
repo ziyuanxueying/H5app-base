@@ -1,0 +1,80 @@
+{
+  "pages": [
+    {
+      "path": "pages/tabbar/login",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "登錄"
+      }
+    },
+    {
+      "path": "pages/tabbar/tabbar-home",
+      "style": {
+        "navigationBarTitleText": "首頁",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/tabbar/tabbar-tuan",
+      "style": {
+        "navigationBarTitleText": "拼團"
+      }
+    },
+    {
+      "path": "pages/tabbar/tabbar-cart",
+      "style": {
+        "navigationBarTitleText": "購物車"
+      }
+    },
+    {
+      "path": "pages/tabbar/tabbar-me",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "pullToRefresh": {
+            "support": true,
+            "color": "#7AA8C7"
+          }
+        }
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "color": "#353535",
+    "selectedColor": "#7AA8C7",
+    "list": [
+      {
+        "pagePath": "pages/tabbar/tabbar-home",
+        "iconPath": "static/img/tabbar-home.png",
+        "selectedIconPath": "static/img/tabbar-home-sle.png",
+        "text": "首頁"
+      },
+      {
+        "pagePath": "pages/tabbar/tabbar-tuan",
+        "iconPath": "static/img/tabbar-tuan.png",
+        "selectedIconPath": "static/img/tabbar-tuan-sle.png",
+        "text": "拼團"
+      },
+      {
+        "pagePath": "pages/tabbar/tabbar-cart",
+        "iconPath": "static/img/tabbar-cart.png",
+        "selectedIconPath": "static/img/tabbar-cart-sle.png",
+        "text": "購物車"
+      },
+      {
+        "pagePath": "pages/tabbar/tabbar-me",
+        "iconPath": "static/img/tabbar-me.png",
+        "selectedIconPath": "static/img/tabbar-me-sle.png",
+        "text": "我"
+      }
+    ]
+  }
+}

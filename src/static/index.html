@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>
+            <%= htmlWebpackPlugin.options.title %>
+        </title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 20 + 'px'
+            });
+            if ('serviceWorker' in navigator) {
+              window.addEventListener('load', function() {
+                navigator.serviceWorker.register('./sw.js');
+              });
+            }
+        </script>
+        <link rel="stylesheet" href="<%= BASE_URL %>static/index.css" />
+        <meta name="theme-color" content="#ffffff">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="香港分多多">
+        <link rel="apple-touch-icon" href="/img/mobile-homescrenn-192x192.png">
+        <link rel="manifest" href="./devmanifest.json">
+        <!-- <script type="text/javascript" src="http://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js" ></script> -->
+        <script type="text/javascript" >
+        !function(a,b,c){function d(a){var c="default";a.self_redirect===!0?c="true":a.self_redirect===!1&&(c="false");var d=b.createElement("iframe"),e="https://open.weixin.qq.com/connect/qrconnect?appid="+a.appid+"&scope="+a.scope+"&redirect_uri="+a.redirect_uri+"&state="+a.state+"&login_type=jssdk&self_redirect="+c+'&styletype='+(a.styletype || '')+'&sizetype='+(a.sizetype || '')+'&bgcolor='+(a.bgcolor || '')+'&rst='+(a.rst || '');e+=a.style?"&style="+a.style:"",e+=a.href?"&href="+a.href:"",d.src=e,d.frameBorder="0",d.allowTransparency="true",d.scrolling="no",d.width="300px",d.height="400px";var f=b.getElementById(a.id);f.innerHTML="",f.appendChild(d)}a.WxLogin=d}(window,document);
+        </script>
+        <style>
+          .vb {
+            width: 100%;
+          }
+          @media not screen and (max-width: 750px) {
+              .vb {
+                width: 500px;
+              }
+              .uni-tabbar{
+                width: 500px !important;
+                left:calc(50% - 250px) !important;
+              }
+          }
+        </style>
+    </head>
+    <body style="background-color:#F8F8F8;display: flex;justify-content: center;">
+        <noscript>
+            <strong>Please enable JavaScript to continue.</strong>
+        </noscript>
+        <div  class="vb">        
+          <div id="app"></div>
+        </div>
+        <!-- built files will be auto injected -->
+    </body>
+</html>
