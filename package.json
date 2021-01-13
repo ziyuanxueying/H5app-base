@@ -26,7 +26,7 @@
     "@dcloudio/uni-mp-weixin": "^2.0.0-24120191114004",
     "@dcloudio/uni-stat": "^2.0.0-24120191114004",
     "flyio": "^0.6.2",
-    "hellojs": "^1.18.1",
+    "hellojs": "^1.18.6",
     "lodash": "^4.17.15",
     "node-sass": "^4.13.0",
     "regenerator-runtime": "^0.12.1",
