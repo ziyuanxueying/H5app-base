@@ -27,7 +27,7 @@
     "@dcloudio/uni-stat": "^2.0.0-24120191114004",
     "flyio": "^0.6.2",
     "hellojs": "^1.18.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "node-sass": "^4.13.0",
     "regenerator-runtime": "^0.12.1",
     "sass-loader": "^8.0.0",
